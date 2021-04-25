@@ -15,6 +15,7 @@ type Startup() =
         ()
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+    // new line
     member this.Configure(app: IApplicationBuilder, env: IWebHostEnvironment) =
         if env.IsDevelopment() then
             app.UseDeveloperExceptionPage() |> ignore
